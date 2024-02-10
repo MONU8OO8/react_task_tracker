@@ -16,7 +16,7 @@ const Header = ({ title, showAddTask, toggleShow }) => {
       /> */}
       <Button
         // color={showAddTask ? "red" : "purple"}
-        text={showAddTask ? "Close Add Task Bar" : "Show Add Task Bar"}
+        text={showAddTask ? "Close" : "Add Task"}
         toggleShow={toggleShow}
       />
     </div>

@@ -12,7 +12,7 @@ const Duty = ({ duty, deleteTask, toggleDone }) => {
 
   return (
     <div
-      className={`task ${isChecked ? "done" : ""}`}
+      className={`task ${isChecked ? "done" : "notdone"}`}
       draggable
       onDragStart={(e) => {
         e.dataTransfer.setData("taskId", duty.id);

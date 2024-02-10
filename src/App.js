@@ -86,7 +86,7 @@ function App() {
           onTaskDrop={handleTaskDrop}
         />
       ) : (
-        <h2 style={{ textAlign: "center", color: "white" }}>NO TASK TO SHOW</h2>
+        <h2 style={{ textAlign: "center", color: "black" }}>NO TASK TO SHOW</h2>
       )}
       <div className="deleteAll">
         <button className="btn" onClick={handleFilterChecked}>Completed</button>

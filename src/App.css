@@ -19,7 +19,7 @@ body {
   min-height: 300px;
   padding: 30px;
   border-radius: 10px;
-  background: #FDF6CE;
+  background: linear-gradient(135deg, #ffdd88 0%, #ff6f69 100%); /* Gradient background */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
@@ -36,7 +36,7 @@ body {
 
 .btn {
   display: inline-block;
-  background-color: #ff6b6b;
+  background-color: #4b7bec; /* Blue color */
   color: #fff;
   border: none;
   padding: 10px 20px;
@@ -46,11 +46,12 @@ body {
   text-decoration: none;
   font-size: 16px;
   font-weight: bold;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 .btn:hover {
-  background-color: #ff4d2d;
+  background-color: #3867d6; /* Darker blue on hover */
+  transform: translateY(-2px); /* Apply a slight lift effect on hover */
 }
 
 .btn:focus {
@@ -61,22 +62,8 @@ body {
   transform: scale(0.98);
 }
 
-.btn-block {
-  display: block;
-  width: 100%;
-}
-
-.deleteAll {
-  text-align: center;
-  margin-top: 3rem;
-}
-
-.deleteAll .btnDeleteAll {
-  background-color: #4b7bec;
-}
-
 .task {
-  background: #f9fafb;
+  background: #f9fafb; /* Light grayish blue */
   margin: 10px 0;
   padding: 15px;
   border-radius: 8px;
@@ -102,12 +89,21 @@ body {
 }
 
 .done {
-  background: #d1e7dd;
-  border-left: 5px solid #218c74;
+  background: #d1e7dd; /* Light green */
+  border-left: 5px solid #218c74; /* Dark green border */
 }
 
 .done:hover {
-  background: #c3e6cb;
+  background: #c3e6cb; /* Darker green on hover */
+}
+
+.notdone {
+  background: #fadbd8; /* Light red */
+  border-left: 5px solid #e84c3c; /* Dark red border */
+}
+
+.notdone:hover {
+  background: #f5b7b1; /* Darker red on hover */
 }
 
 .form-control {
@@ -132,7 +128,7 @@ body {
 
 .form-control input:focus {
   outline: none;
-  border-color: #4b7bec;
+  border-color: #4b7bec; /* Blue border color on focus */
 }
 
 footer {
